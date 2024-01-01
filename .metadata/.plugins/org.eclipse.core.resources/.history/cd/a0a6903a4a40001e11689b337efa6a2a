@@ -1,0 +1,18 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+//import java.io.FileNotFoundException;
+public class StringLineCount {
+
+	public static void main(String[] args)throws Exception {
+		fileReader f1=new fileReader("data.txt");
+		bufferedReader b1=new bufferedReader(f1);
+		String s="";
+		int ln=0;
+		while((s.b1.readline())!=null) {
+			ln++;
+		}
+		System.out.println(ln);
+
+	}
+
+}

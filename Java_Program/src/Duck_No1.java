@@ -1,0 +1,21 @@
+public class Duck_No1 {
+	static boolean IsDuckNo(int n)
+	{
+		int rem =0;
+		while(n!=0)
+		{
+			rem =n%10;
+			if(rem==0)
+			{
+				return true;
+			}
+			n =n/10;
+		}
+		return false;
+	}
+	public static void main(String[] args) {
+		System.out.println(IsDuckNo(405));
+		System.out.println(IsDuckNo(65464));
+	}
+
+}

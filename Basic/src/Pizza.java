@@ -1,0 +1,59 @@
+public class Pizza {
+
+	public static void main(String[] args) {
+		int typeCode =2;
+		boolean cheese = true;
+		boolean toping1 = true;
+		boolean toping2 = true;
+		int price = 0;
+		float tax = 0;
+		String size =null;
+		if(typeCode==1)
+		{
+			price = 80;
+			size = "Regular";
+		}
+		if(typeCode==2)
+		{
+			price = 125;
+			size = "Medium";
+		}
+		if(typeCode==3)
+		{
+			price = 150;
+			size = "Large";
+		}
+		if(cheese=true)
+		{
+			price = price+80;
+		}
+		if(toping1 == true && toping2==false)
+		{
+			price = price+40;
+		}
+		if(toping1==true && toping2==true)
+		{
+			price=price+75;
+		}
+		System.out.println("Type = "+size);
+		System.out.println("toping1 = "+toping1);
+		System.out.println("toping2 = "+toping2);
+		System.out.println("cheese = "+cheese);
+		System.out.println("price = "+price);
+		float GST = price*0.05f;
+		System.out.println("tax = "+tax);
+		System.out.println("GST = "+GST);
+		System.out.println("total = "+(price+GST));
+		if(typeCode==1||typeCode==3)
+		{
+			System.out.println("Grab you free coke");
+		}
+		if(price>279)
+		{
+			System.out.println("Get garlic bread @ 39");
+			System.out.println("Limited offors");
+		}
+
+	}
+
+}

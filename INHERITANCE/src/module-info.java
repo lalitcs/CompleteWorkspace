@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author lalit
+ *
+ */
+module INHERITANCE {
+}

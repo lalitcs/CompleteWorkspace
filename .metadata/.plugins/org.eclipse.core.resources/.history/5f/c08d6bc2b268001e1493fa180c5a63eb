@@ -1,0 +1,17 @@
+package Map;
+import java.util.*;
+public class OccuranceOfEachCharUSingLinkedHashMap {
+	public static void main(String[] args) {
+	LinkedHashMap<Integer,String> l1=new LinkedHashMap<Integer,String>();
+	l1.put(1,"apple");
+	l1.put(2,"ball");
+	l1.put(3,"cat");
+	l1.put(1,"airoplane");
+	l1.put(8,"dog");
+	System.out.println(l1.containsKey(4));//used to check particular key is present or not
+
+	}
+}
+
+
+

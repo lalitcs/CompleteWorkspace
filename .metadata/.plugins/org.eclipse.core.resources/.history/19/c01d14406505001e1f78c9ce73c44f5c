@@ -1,0 +1,19 @@
+
+public class Test4 {
+
+	public static void main(String[] args) {
+		String iteam = "Biryani";
+		int price = 250;
+		int qty = 5;
+		int bill = price*qty;
+	    float GST = bill*0.05f;
+	    float total = bill+GST;
+	    System.out.println("iteam bill = "+bill);
+	    System.out.println("iteam GST = "+GST);
+	    System.out.println(" iteam total"+total);
+	    
+				
+	
+	}
+
+}

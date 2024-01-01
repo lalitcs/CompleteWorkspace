@@ -1,0 +1,24 @@
+public class Product {
+
+	public static void main(String[] args) {
+		int p1 = 6000;int p2= 4000;
+		int p3 = 2000;int p4= 1000;
+		float bill = p1+p2+p3+p4;
+		float discount =0;
+		System.out.println("p1 = "+p1);
+		System.out.println("p2 = "+p2);
+		System.out.println("p3 = "+p3);
+		System.out.println("p4 = "+p4);
+		System.out.println("bill before discount = "+bill);
+		if(bill>=2000)
+		{
+			discount = bill*0.15f;
+			bill = bill-discount;
+			System.out.println(" discount =" + discount);
+			System.out.println("bill after the discount = "+bill);
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}

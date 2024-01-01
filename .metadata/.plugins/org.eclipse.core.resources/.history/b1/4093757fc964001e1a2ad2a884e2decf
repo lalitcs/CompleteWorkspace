@@ -1,0 +1,26 @@
+package Tree;
+
+public class BST {
+	void insert(Node root,int data) {
+		if(root.data>data) {
+			if(root.left==null) {
+				root.left=new Node(data);
+				System.out.println(data+" has been inserted towards left of "+root.data);
+				
+			}
+			else {
+				insert(root.left,data);
+			}
+		}
+		else {
+			if(root.right==null) {
+				root.right=new Node(data);
+				System.out.println(data+" has been insert towarts right of "+root.data);
+			}
+			else {
+				insert(root.right,data);
+			}
+		}
+	}
+
+}
